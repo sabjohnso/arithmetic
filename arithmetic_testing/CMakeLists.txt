@@ -1,5 +1,7 @@
 find_package(GTest)
 
+find_package(function_utility REQUIRED)
+
 macro(arithmetic_add_test test_name exe_name)
   add_executable(${exe_name} ${ARGN})
   target_link_libraries(${exe_name} PRIVATE
@@ -7,3 +9,11 @@ macro(arithmetic_add_test test_name exe_name)
     GTest::gtest_main)
   add_test(${test_name} ${exe_name})
 endmacro()
+
+arithmetic_add_test(magma magma_test magma_test.cpp)
+target_link_libraries(magma_test PRIVATE  function_utility::function_utility)
+
+arithmetic_add_test(additive additive_test additive_test.cpp)
+
+arithmetic_add_test(additive_monoid additive_monoid_test additive_monoid_test.cpp)
+arithmetic_add_test(multiplicative multiplicative_test multiplicative_test.cpp)

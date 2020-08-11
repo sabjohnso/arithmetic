@@ -1,0 +1,49 @@
+#pragma once
+
+//
+// ... Arithmetic header files
+//
+#include <arithmetic/details/Magma.hpp>
+#include <arithmetic/details/Identity.hpp>
+#include <arithmetic/details/Inversion.hpp>
+#include <arithmetic/details/One.hpp>
+#include <arithmetic/details/Zero.hpp>
+#include <arithmetic/details/Negate.hpp>
+#include <arithmetic/details/Addition.hpp>
+#include <arithmetic/details/Multiplication.hpp>
+#include <arithmetic/details/Additive_magma.hpp>
+#include <arithmetic/details/Additive_identity.hpp>
+#include <arithmetic/details/Additive_monoid.hpp>
+#include <arithmetic/details/Additive_inverse.hpp>
+#include <arithmetic/details/Additive_group.hpp>
+#include <arithmetic/details/Multiplicative_magma.hpp>
+#include <arithmetic/details/Multiplicative_identity.hpp>
+#include <arithmetic/details/Multiplicative_monoid.hpp>
+#include <arithmetic/details/Multiplicative_inverse.hpp>
+#include <arithmetic/details/Multiplicative_group.hpp>
+
+
+
+
+
+namespace Arithmetic
+{
+  using ::Arithmetic::Details::Zero;
+  using ::Arithmetic::Details::One;
+  using ::Arithmetic::Details::Magma;
+  using ::Arithmetic::Details::Identity;
+  using ::Arithmetic::Details::Inversion;
+
+  using ::Arithmetic::Details::Additive_magma;
+  using ::Arithmetic::Details::Additive_identity;
+  using ::Arithmetic::Details::Additive_monoid;
+  using ::Arithmetic::Details::Additive_inverse;
+  using ::Arithmetic::Details::Additive_group;
+
+  using ::Arithmetic::Details::Multiplicative_magma;
+  using ::Arithmetic::Details::Multiplicative_identity;
+  using ::Arithmetic::Details::Multiplicative_monoid;
+  using ::Arithmetic::Details::Multiplicative_inverse;
+  using ::Arithmetic::Details::Multiplicative_group;
+
+} // end of namespace Arithmetic
