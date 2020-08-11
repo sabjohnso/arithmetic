@@ -19,6 +19,5 @@ namespace Arithmetic::Details
    */
   template<typename T>
   struct Additive_semigroup : Additive_magma<T>
-  {};
-
+  {}; // end of struct Additive_semigroup
 } // end of namespace Arithmetic::Details

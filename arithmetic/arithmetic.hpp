@@ -21,7 +21,8 @@
 #include <arithmetic/details/Multiplicative_monoid.hpp>
 #include <arithmetic/details/Multiplicative_inverse.hpp>
 #include <arithmetic/details/Multiplicative_group.hpp>
-
+#include <arithmetic/details/Field.hpp>
+#include <arithmetic/details/Approximate_field.hpp>
 
 
 
@@ -45,5 +46,8 @@ namespace Arithmetic
   using ::Arithmetic::Details::Multiplicative_monoid;
   using ::Arithmetic::Details::Multiplicative_inverse;
   using ::Arithmetic::Details::Multiplicative_group;
+
+  using ::Arithmetic::Details::Field;
+  using ::Arithmetic::Details::Approximate_field;
 
 } // end of namespace Arithmetic

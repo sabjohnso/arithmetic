@@ -12,8 +12,9 @@ endmacro()
 
 arithmetic_add_test(magma magma_test magma_test.cpp)
 target_link_libraries(magma_test PRIVATE  function_utility::function_utility)
+arithmetic_add_test(additive_monoid additive_monoid_test additive_monoid_test.cpp)
 
 arithmetic_add_test(additive additive_test additive_test.cpp)
-
-arithmetic_add_test(additive_monoid additive_monoid_test additive_monoid_test.cpp)
 arithmetic_add_test(multiplicative multiplicative_test multiplicative_test.cpp)
+arithmetic_add_test(field field_test field_test.cpp)
+arithmetic_add_test(approximate_field approximate_field_test approximate_field_test.cpp)

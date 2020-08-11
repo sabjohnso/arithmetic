@@ -17,6 +17,5 @@ namespace Arithmetic::Details
   struct Additive_monoid
     : Additive_semigroup<T>
     , Additive_identity<T>
-  {
-  }; // end of struct Additive_monoid
+  {}; // end of struct Additive_monoid
 } // end of namespace Arithmetic::Details
