@@ -3,8 +3,8 @@
 //
 // ... Arithmetic header files
 //
-#include <arithmetic/details/Additive_group.hpp>
-#include <arithmetic/details/Multiplicative_group.hpp>
+#include <arithmetic/details/Abelian_additive_group.hpp>
+#include <arithmetic/details/Abelian_multiplicative_group.hpp>
 
 namespace Arithmetic::Details
 {
@@ -20,7 +20,7 @@ namespace Arithmetic::Details
    * be tested.   */
   template<typename T>
   struct Field
-    : Additive_group<T> , Multiplicative_group<T>
+    : Abelian_additive_group<T> , Abelian_multiplicative_group<T>
   {}; // end of struct Field
 
 } // end of namespace Arithmetic::Details

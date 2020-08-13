@@ -21,8 +21,12 @@
 #include <arithmetic/details/Multiplicative_monoid.hpp>
 #include <arithmetic/details/Multiplicative_inverse.hpp>
 #include <arithmetic/details/Multiplicative_group.hpp>
+#include <arithmetic/details/Abelian_additive_group.hpp>
+#include <arithmetic/details/Abelian_approximate_additive_group.hpp>
 #include <arithmetic/details/Field.hpp>
 #include <arithmetic/details/Approximate_field.hpp>
+#include <arithmetic/details/Vector_space.hpp>
+#include <arithmetic/details/Approximate_vector_space.hpp>
 
 
 
@@ -49,5 +53,8 @@ namespace Arithmetic
 
   using ::Arithmetic::Details::Field;
   using ::Arithmetic::Details::Approximate_field;
+
+  using ::Arithmetic::Details::Vector_space;
+  using ::Arithmetic::Details::Vector_space;
 
 } // end of namespace Arithmetic

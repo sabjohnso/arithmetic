@@ -3,8 +3,8 @@
 //
 // ... Arithmetic header files
 //
-#include <arithmetic/details/Approximate_additive_group.hpp>
-#include <arithmetic/details/Multiplicative_group.hpp>
+#include <arithmetic/details/Abelian_approximate_additive_group.hpp>
+#include <arithmetic/details/Abelian_multiplicative_group.hpp>
 
 namespace Arithmetic::Details
 {
@@ -25,6 +25,6 @@ namespace Arithmetic::Details
    */
   template<typename T>
   struct Approximate_field
-    : Approximate_additive_group<T>, Multiplicative_group<T>
+    : Abelian_approximate_additive_group<T>, Abelian_multiplicative_group<T>
   {}; // end of struct Approximate_field
 } // end of namespace Arithmetic::Details
