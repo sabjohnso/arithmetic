@@ -28,6 +28,7 @@
 #include <arithmetic/details/Vector_space.hpp>
 #include <arithmetic/details/Approximate_vector_space.hpp>
 
+#include <arithmetic/details/Field_extension.hpp>
 
 
 
@@ -35,6 +36,12 @@ namespace Arithmetic
 {
   using ::Arithmetic::Details::Zero;
   using ::Arithmetic::Details::One;
+
+  using ::Arithmetic::Details::Addition;
+  using ::Arithmetic::Details::Multiplication;
+  using ::Arithmetic::Details::Negate;
+  using ::Arithmetic::Details::Reciprocal;
+
   using ::Arithmetic::Details::Magma;
   using ::Arithmetic::Details::Identity;
   using ::Arithmetic::Details::Inversion;
@@ -56,5 +63,7 @@ namespace Arithmetic
 
   using ::Arithmetic::Details::Vector_space;
   using ::Arithmetic::Details::Vector_space;
+
+  using ::Arithmetic::Details::Field_extension;
 
 } // end of namespace Arithmetic
